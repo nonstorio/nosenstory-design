@@ -16,6 +16,10 @@ Here we have specification, art, process diagrams and other design stuff about N
 
 ![Invite Players](./Processes/Invite%20Players.png)
 
+### Question Players
+
+![Question Players](./Processes/Question%20Players.png)
+
 ## Contributing
 
 ### Art
