@@ -8,8 +8,8 @@ Here we have specification, art, process diagrams and other design stuff about N
 
 **Round** is considered a process in which several players participate in game to get a single nonstory out of their own answers. It is organized as shown in following diagram:
 
-![Round](./processes/Round.png)
+![Round](./Processes/Round.png)
 
 ### Invite Players
 
-![Invite Players](./processes/Invite Players.png)
+![Invite Players](./Processes/Invite%20Players.png)
