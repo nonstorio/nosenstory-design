@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_0hzgk58" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.7.0">
   <bpmn:process id="Process_179vk89" name="Invite Players" isExecutable="true">
-    <bpmn:startEvent id="StartEvent_1" name="Bot engages players">
+    <bpmn:startEvent id="StartEvent_1" name="Bot is engaging players">
       <bpmn:outgoing>Flow_0osxfd9</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="Flow_0osxfd9" sourceRef="StartEvent_1" targetRef="Activity_06whhzb" />
@@ -40,7 +40,7 @@
       <bpmn:timerEventDefinition id="TimerEventDefinition_02gh7ns" />
     </bpmn:intermediateCatchEvent>
     <bpmn:sequenceFlow id="Flow_1if3qfh" sourceRef="Gateway_1w0u3l9" targetRef="Event_092c85z" />
-    <bpmn:endEvent id="Event_0r7y6dn" name="Bot engages players">
+    <bpmn:endEvent id="Event_0r7y6dn" name="Bot is engaging players">
       <bpmn:incoming>Flow_0m1n00e</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_0ig0b1s" sourceRef="Gateway_1w0u3l9" targetRef="Event_0bs7po8" />
@@ -83,7 +83,7 @@
     </bpmn:adHocSubProcess>
     <bpmn:sequenceFlow id="Flow_1jj8uvg" sourceRef="Activity_14e3hru" targetRef="Gateway_0xm49bo" />
     <bpmn:sequenceFlow id="Flow_068hpck" name="no" sourceRef="Gateway_0inc3bk" targetRef="Activity_14e3hru" />
-    <bpmn:endEvent id="Event_0ypu25q" name="Players commence the game">
+    <bpmn:endEvent id="Event_0ypu25q" name="Players are commencing the game">
       <bpmn:incoming>Flow_17asyyh</bpmn:incoming>
       <bpmn:escalationEventDefinition id="EscalationEventDefinition_17q3jrr" />
     </bpmn:endEvent>
@@ -142,7 +142,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_17asyyh" name="yes" sourceRef="Gateway_06ri93l" targetRef="Event_0ypu25q" />
     <bpmn:sequenceFlow id="Flow_1eohxro" name="no" sourceRef="Gateway_06ri93l" targetRef="Event_1dqs8sz" />
-    <bpmn:endEvent id="Event_1dqs8sz" name="Game cannot start without more players">
+    <bpmn:endEvent id="Event_1dqs8sz" name="Round is not going to begin without more players">
       <bpmn:incoming>Flow_1eohxro</bpmn:incoming>
       <bpmn:compensateEventDefinition id="CompensateEventDefinition_0oddtf7" />
     </bpmn:endEvent>
@@ -165,7 +165,7 @@
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="172" y="319" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="160" y="362" width="63" height="27" />
+          <dc:Bounds x="154" y="362" width="76" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0osxfd9_di" bpmnElement="Flow_0osxfd9">
@@ -219,7 +219,7 @@
       <bpmndi:BPMNShape id="Event_0r7y6dn_di" bpmnElement="Event_0r7y6dn">
         <dc:Bounds x="1472" y="319" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1459" y="362" width="63" height="27" />
+          <dc:Bounds x="1453" y="362" width="76" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0ig0b1s_di" bpmnElement="Flow_0ig0b1s">
@@ -301,7 +301,7 @@
       <bpmndi:BPMNShape id="Event_16b0lgf_di" bpmnElement="Event_0ypu25q">
         <dc:Bounds x="1822" y="152" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1805" y="195" width="73" height="40" />
+          <dc:Bounds x="1799" y="100" width="81" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1iodmxf_di" bpmnElement="Activity_1iodmxf">
@@ -394,17 +394,17 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1eohxro_di" bpmnElement="Flow_1eohxro">
-        <di:waypoint x="1760" y="145" />
-        <di:waypoint x="1760" y="70" />
-        <di:waypoint x="1822" y="70" />
+        <di:waypoint x="1760" y="195" />
+        <di:waypoint x="1760" y="250" />
+        <di:waypoint x="1822" y="250" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1769" y="105" width="13" height="14" />
+          <dc:Bounds x="1738" y="212" width="13" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Event_1y55bq5_di" bpmnElement="Event_1dqs8sz">
-        <dc:Bounds x="1822" y="52" width="36" height="36" />
+        <dc:Bounds x="1822" y="232" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1797" y="95" width="88" height="40" />
+          <dc:Bounds x="1806" y="275" width="70" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_0o28t74_di" bpmnElement="TextAnnotation_0o28t74">
