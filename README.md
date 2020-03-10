@@ -2,6 +2,8 @@
 
 > **NonStory** (a.k.a. "Nonsensical Story") is an improvised party game where players answer given short questions, and as result their answers are composed in a brief nonsensical story which is fun to read!
 
+![NonStory](./Art/NonStory.png)
+
 Here we have specification, art, process diagrams and other design stuff about NonStory.
 
 ## Round
