@@ -6,11 +6,11 @@
 
 Here we have specification, art, process diagrams and other design stuff about NonStory.
 
-## Round
+## Hold a Round
 
-**Round** is considered a process in which several players participate in game to get a single nonstory out of their own answers. It is organized as shown in following diagram:
+**Round** is considered an interval in which several players participate in game to get a single nonstory out of their own answers. The process of holding it is organized as shown in following diagram:
 
-![Round](./Processes/Round.png)
+![Hold a Round](./Processes/Hold%20a%20Round.png)
 
 ### Invite Players
 
