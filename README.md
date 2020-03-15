@@ -35,4 +35,12 @@ Making process diagrams in universal form, which is BPMN, is the part of agreeab
 
 We use Business Process Model and Notation (BPMN) to describe all possible activities in gameplay and have a perspective look on its extension.
 
-Use [Camunda Modeler](https://camunda.com/download/modeler/) to edit or create BPMN diagrams. It's quite a good tool, I tested! 💯
+You can use [Camunda Modeler](https://camunda.com/download/modeler/) or other modeler based on bpmn.io to edit or create BPMN diagrams.
+
+What is more, there are rules we use to make more sense of schemes:
+- follow [BPMN 2.0 specification](https://www.omg.org/spec/BPMN/2.0/),
+- encapsulate hard logic in sub-process,
+- apply English title capitalization for activity tasks and sub-processes, also keep them as short as possible,
+- if possible, try to associate generic end event with the most ideal outcome (success),
+- instead of hoisting same error in scopes of various levels, allocate it a unique signal and handle that in top one (for example look at "Not enough players"),
+- specify approximate time for countdown in annotation.
