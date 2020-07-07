@@ -6,7 +6,7 @@
 
 Here we have specification, art, process diagrams and other design stuff about NosenStory.
 
-![NosenStory LOL](./Art/NosenStory.svg)
+![NosenStory LOL](./Art/NosenStory-LOL.svg)
 
 ## Hold a Round
 
