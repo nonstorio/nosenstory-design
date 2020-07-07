@@ -1,10 +1,12 @@
-# NonStory – Design
+# NosenStory – Design
 
-> **NonStory** (a.k.a. "Nonsensical Story") is an improvised party game where players answer given short questions, and as result their answers are composed in a brief nonsensical story which is fun to read!
+> **NosenStory** (a.k.a. "Nonsensical Story" or "NonStory") is an improvised party game where players answer given short questions, and as result their answers are composed in a brief nonsensical story which is fun to read!
 
-![NonStory](./Art/NonStory.png)
+![NosenStory](./Art/NosenStory.png)
 
-Here we have specification, art, process diagrams and other design stuff about NonStory.
+Here we have specification, art, process diagrams and other design stuff about NosenStory.
+
+![NosenStory LOL](./Art/NosenStory.svg)
 
 ## Hold a Round
 
@@ -44,3 +46,4 @@ What is more, there are rules we use to make more sense of schemes:
 - if possible, try to associate generic end event with the most ideal outcome (success),
 - instead of hoisting same error in scopes of various levels, allocate it a unique signal and handle that in top one (for example look at "Not enough players"),
 - specify approximate time for countdown in annotation.
+
